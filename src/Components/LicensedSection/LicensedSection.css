@@ -1,0 +1,59 @@
+.licensed-section {
+  padding: 80px 20px;
+  background: #bfc7cf;
+  text-align: center;
+}
+
+.licensed-container {
+  max-width: 800px;
+  margin: auto;
+}
+
+.licensed-icon img {
+  width: 100px; /* adjust size as needed */
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.licensed-section h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+.licensed-section h3 {
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.licensed-section p {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #444;
+  margin-bottom: 30px;
+}
+
+/* Button */
+.licensed-btn-container {
+  margin-top: 20px;
+}
+
+.licensed-btn {
+  padding: 16px 35px;
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  background: black;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.licensed-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}

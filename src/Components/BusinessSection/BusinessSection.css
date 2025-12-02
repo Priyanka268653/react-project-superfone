@@ -1,0 +1,99 @@
+.business-section {
+  background-color: #92c3f7;
+  padding: 70px 40px; /* section spacing increased */
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+/* Heading */
+.business-center h1 {
+  text-align: center;
+  font-size: 2.3rem;
+  margin-bottom: 50px;  /* more space below heading */
+  font-weight: 700;
+}
+
+/* Main Container */
+.business-container {
+  display: flex;
+  gap: 50px;  /* ⭐ increased space between cards & image */
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Left Column */
+.business-left {
+  flex: 1 1 380px;  /* slightly wider */
+  display: flex;
+  flex-direction: column;
+  gap: 25px; /* ⭐ more spacing between cards */
+}
+
+/* Card */
+.business-card {
+  background: #0056b3;
+  padding: 22px 22px; /* slightly bigger */
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.22);
+  border-left: 6px solid #ffd700;
+  transition: 0.3s ease;
+}
+
+.business-card:hover {
+  transform: translateY(-4px);
+}
+
+/* Icon */
+.card-icon {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #ffd700;
+}
+
+/* Title */
+.business-card h2 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+/* Desc */
+.card-desc {
+  font-size: 1.1rem;
+  margin-bottom: 6px;
+}
+
+/* Note */
+.card-note {
+  font-size: 1rem;
+  color: #e8e8e8;
+}
+
+/* Right: Image increased spacing */
+.business-right {
+  flex: 1 1 380px;
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.business-right img {
+  max-width: 95%;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+
+/* Mobile */
+@media (max-width: 900px) {
+  .business-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 80px; /* more spacing on mobile too */
+  }
+
+  .business-right img {
+    max-width: 90%;
+  }
+}

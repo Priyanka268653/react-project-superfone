@@ -1,0 +1,103 @@
+/* Container with colorful gradient background */
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #ff9a9e, #f6d365, #fbc2eb, #a6c1ee);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  padding: 15px;
+}
+
+@keyframes gradientBG {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+
+/* Small Card */
+.signup-card {
+  background: white;
+  padding: 30px 25px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  max-width: 350px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Heading */
+.signup-card h2 {
+  font-size: 24px;
+  margin-bottom: 5px;
+  color: #ff4d6d;
+}
+
+.signup-subtitle {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Form */
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.signup-form input {
+  padding: 12px;
+  border-radius: 12px;
+  border: none;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.signup-form input:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgba(255,77,109,0.5);
+}
+
+/* Button */
+.signup-form button {
+  background: linear-gradient(135deg, #ff6b6b, #ffb347);
+  color: white;
+  font-weight: 600;
+  padding: 12px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.signup-form button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(255,107,107,0.4);
+}
+
+/* Login link */
+.login-link {
+  font-size: 13px;
+  margin-top: 15px;
+  color: #555;
+}
+
+.login-link a {
+  color: #ff4d6d;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 400px) {
+  .signup-card {
+    padding: 25px 20px;
+  }
+}

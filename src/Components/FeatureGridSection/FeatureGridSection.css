@@ -1,0 +1,93 @@
+.featuregrid-section {
+  padding: 60px 20px 120px 20px;
+  background: #f5ddedee;
+  text-align: center;
+}
+
+.featuregrid-container {
+  max-width: 1300px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.featuregrid-card {
+  background: white; /* Changed from pink to white */
+  padding: 25px 15px 20px 15px; /* smaller card */
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.featuregrid-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 45px rgba(0,0,0,0.2);
+}
+
+/* Icon Circle */
+.featuregrid-icon {
+  background: #4facfe; /* icon background color */
+  color: white;        /* icon color */
+  font-size: 36px;
+  padding: 18px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.featuregrid-card h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #111;
+  text-align: center;
+}
+
+.featuregrid-card p {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* Button */
+.featuregrid-btn-container {
+  margin-top: 40px;
+}
+
+.featuregrid-btn {
+  padding: 16px 35px;
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  background: black; /* Changed button to black */
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.featuregrid-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+/* Responsive */
+@media (max-width: 1100px) {
+  .featuregrid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 850px) {
+  .featuregrid-container {
+    grid-template-columns: 1fr;
+  }
+}

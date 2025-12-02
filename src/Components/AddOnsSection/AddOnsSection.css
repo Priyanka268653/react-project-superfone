@@ -1,0 +1,56 @@
+.addons-section {
+  padding: 40px 20px 120px 20px; /* feature card style chipka hua */
+  background: #cfe4fa;
+}
+
+.addons-container {
+  max-width: 1300px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap;
+  padding: 70px;
+  border-radius: 40px;
+  background: rgb(247, 215, 238);
+  box-shadow: 0 25px 60px rgba(252, 167, 167, 0.3);
+}
+
+/* LEFT SIDE TEXT */
+.addons-left {
+  flex: 1;
+}
+
+.addons-left h3 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 15px;
+  color: #222;
+  line-height: 2;
+}
+
+/* RIGHT IMAGE */
+.addons-right {
+  flex: 1;
+  text-align: center;
+}
+
+.addons-right img {
+  width: 100%;
+  max-width: 550px;
+  border-radius: 20px;
+}
+
+/* Responsive */
+@media (max-width: 850px) {
+  .addons-container {
+    flex-direction: column;
+    text-align: center;
+    padding: 50px;
+  }
+
+  .addons-right img {
+    max-width: 400px;
+    margin-top: 30px;
+  }
+}

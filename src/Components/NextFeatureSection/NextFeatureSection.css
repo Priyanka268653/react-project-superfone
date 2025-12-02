@@ -1,0 +1,68 @@
+.nextfeature-section {
+  padding: 40px 20px 120px 20px; /* chipka hua */
+  background: #c7def5;
+}
+
+.nextfeature-container {
+  max-width: 1300px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap;
+  padding: 70px;            
+  border-radius: 40px;      
+  background: rgb(211, 211, 240);
+  box-shadow: 0 25px 60px rgba(0,0,0,0.3);
+}
+
+/* LEFT SIDE TEXT */
+.nextfeature-left {
+  flex: 1;
+}
+
+.nextfeature-left h2 {
+  font-size: 34px; 
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #111;
+}
+
+.nextfeature-features {
+  list-style: disc;
+  padding-left: 20px;
+  margin-bottom: 35px;
+  font-size: 19px; 
+  line-height: 2.2;
+  color: #222;
+}
+
+.nextfeature-features li {
+  margin-bottom: 12px;
+}
+
+/* RIGHT IMAGE */
+.nextfeature-right {
+  flex: 1;
+  text-align: center;
+}
+
+.nextfeature-right img {
+  width: 100%;
+  max-width: 550px;
+  border-radius: 20px;
+}
+
+/* Responsive */
+@media (max-width: 850px) {
+  .nextfeature-container {
+    flex-direction: column;
+    text-align: center;
+    padding: 50px;
+  }
+
+  .nextfeature-right img {
+    max-width: 400px;
+    margin-top: 30px;
+  }
+}

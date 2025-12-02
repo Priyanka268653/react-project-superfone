@@ -1,0 +1,151 @@
+.hero {
+  background: linear-gradient(to right, #87ceeb, white);
+  width: 100%;
+  margin: 0;
+  padding: 80px 20px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  min-height: calc(100vh - 60px);
+}
+
+.hero-left {
+  max-width: 600px;
+  text-align: left;
+  color: black;
+  margin: 50px;
+}
+
+.hero-left h1 {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+.hero-left h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.hero-left b {
+  font-size: 18px;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.hero-buttons {
+  display: flex;
+  align-items: center;
+  gap: 20px; 
+  flex-wrap: wrap; 
+  justify-content: flex-start;
+}
+
+.hero-btn {
+  background: linear-gradient(to bottom, purple, red);
+  color: white;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.hero-btn:hover {
+  background: wheat;
+  color: white;
+  border: none;
+}
+
+.hero-btn-outline {
+  background: white;
+  color: black;
+  border: 2px solid black;
+  padding: 12px 28px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.hero-btn-outline:hover {
+  background: grey;
+  color: white;
+  border: 2px solid black;
+}
+
+.hero-right img {
+  width: 450px;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 1024px) {
+  .hero-left h1 {
+    font-size: 36px;
+  }
+  .hero-left h3 {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 50px 20px;
+  }
+
+  .hero-left {
+    margin: 20px 0;
+    max-width: 90%;
+  }
+
+  .hero-left h1 {
+    font-size: 28px;
+  }
+
+  .hero-left h3 {
+    font-size: 16px;
+  }
+
+  .hero-left b {
+    font-size: 16px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+  }
+
+  .hero-right img {
+    width: 80%;
+    max-width: 350px;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero-left h1 {
+    font-size: 24px;
+  }
+  .hero-left h3 {
+    font-size: 14px;
+  }
+  .hero-left b {
+    font-size: 14px;
+  }
+
+  .hero-right img {
+    width: 90%;
+    max-width: 300px;
+  }
+
+  .hero-buttons button {
+    width: 100%;
+  }
+}

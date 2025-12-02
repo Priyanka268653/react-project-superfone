@@ -1,0 +1,57 @@
+.cta-section {
+  padding: 40px 20px 120px 20px; /* top padding कम किया ताकि feature section से chipke */
+  background: rgb(209, 238, 250);
+}
+
+.cta-container {
+  max-width: 1300px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap;
+  padding: 70px;            
+  border-radius: 40px;      
+  background: rgb(250, 232, 235);
+  box-shadow: 0 25px 60px rgba(0,0,0,0.3);
+}
+
+/* LEFT SIDE TEXT */
+.cta-left {
+  flex: 1;
+}
+
+.cta-left h3 {
+  font-size: 20px;       /* points ke liye size */
+  font-weight: 500;
+  margin-bottom: 15px;
+  color: #222;
+  line-height: 2;
+}
+
+/* RIGHT IMAGE */
+.cta-right {
+  flex: 1;
+  text-align: center;
+}
+
+.cta-right img {
+  width: 100%;
+  max-width: 550px;
+  border-radius: 20px;
+}
+
+/* Responsive */
+@media (max-width: 850px) {
+  .cta-container {
+    flex-direction: column;
+    text-align: center;
+    padding: 50px;
+  }
+
+  .cta-right img {
+    max-width: 400px;
+    margin-top: 30px;
+  }
+}
+

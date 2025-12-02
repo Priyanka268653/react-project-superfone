@@ -1,0 +1,102 @@
+/* Full screen center */
+.login-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background: transparent; /* Outer background removed */
+}
+
+/* Card / Glass effect */
+.login-box {
+  width: 400px;
+  padding: 40px;
+  border-radius: 20px;
+
+  /* Orange + Pink gradient card color */
+  background: linear-gradient(135deg, rgba(255,136,0,0.85), rgba(255,64,129,0.85));
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+
+  color: #222; /* Dark text */
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Heading */
+.login-box h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 28px;
+  font-weight: 700;
+  color: #111; /* Dark heading */
+}
+
+/* Input labels */
+label {
+  font-size: 15px;
+  margin-bottom: 6px;
+  display: block;
+  color: #222; /* Dark label */
+}
+
+/* Inputs */
+input {
+  width: 100%;
+  padding: 14px;
+  margin: 10px 0 20px;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  outline: none;
+  background: rgba(255, 255, 255, 0.2);
+  color: #111; /* Dark input text */
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+input:focus {
+  border-color: #ffd27f; /* Golden glow on focus */
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 12px rgba(255, 210, 127, 0.6);
+}
+
+/* Button */
+.login-btn {
+  width: 100%;
+  padding: 14px;
+  background: #fff;
+  color: #ff6600; /* Orange text */
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+
+.login-btn:hover {
+  background: #ffd27f;
+  box-shadow: 0 0 12px rgba(255, 210, 127, 0.6);
+}
+
+/* Bottom text */
+.bottom-text {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+  color: #222; /* Dark bottom text */
+}
+
+.bottom-text a {
+  color: #ff4081; /* Pink link */
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
