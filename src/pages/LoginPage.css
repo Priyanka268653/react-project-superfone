@@ -5,7 +5,7 @@
   justify-content: center;
   align-items: center;
   padding: 20px;
-  background: transparent; /* Outer background removed */
+  background: linear-gradient(135deg, #d9f1ff, #ffffff); /* Soft skyblue → white */
 }
 
 /* Card / Glass effect */
@@ -14,13 +14,14 @@
   padding: 40px;
   border-radius: 20px;
 
-  /* Orange + Pink gradient card color */
-  background: linear-gradient(135deg, rgba(255,136,0,0.85), rgba(255,64,129,0.85));
+  background: linear-gradient(135deg, rgba(0,123,255,0.85), rgba(202, 225, 250, 0.85)); 
+  /* Blue gradient */
+
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
 
-  color: #222; /* Dark text */
+  color: black; /* White text */
   animation: fadeIn 0.8s ease-in-out;
 }
 
@@ -30,7 +31,7 @@
   margin-bottom: 25px;
   font-size: 28px;
   font-weight: 700;
-  color: #111; /* Dark heading */
+  color: #ffffff;
 }
 
 /* Input labels */
@@ -38,7 +39,7 @@ label {
   font-size: 15px;
   margin-bottom: 6px;
   display: block;
-  color: #222; /* Dark label */
+  color: #eaf6ff;
 }
 
 /* Inputs */
@@ -46,27 +47,31 @@ input {
   width: 100%;
   padding: 14px;
   margin: 10px 0 20px;
-  border: 2px solid rgba(0, 0, 0, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.4);
   border-radius: 12px;
   outline: none;
-  background: rgba(255, 255, 255, 0.2);
-  color: #111; /* Dark input text */
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
   font-size: 16px;
   transition: 0.3s;
 }
 
+input::placeholder {
+  color: #eaf6ff;
+}
+
 input:focus {
-  border-color: #ffd27f; /* Golden glow on focus */
-  background: rgba(255, 255, 255, 0.3);
-  box-shadow: 0 0 12px rgba(255, 210, 127, 0.6);
+  border-color: #a9e1ff;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 0 12px rgba(169, 225, 255, 0.7);
 }
 
 /* Button */
 .login-btn {
   width: 100%;
   padding: 14px;
-  background: #fff;
-  color: #ff6600; /* Orange text */
+  background: #ffffff;
+  color: #007bff;
   border: none;
   border-radius: 25px;
   font-size: 16px;
@@ -77,8 +82,8 @@ input:focus {
 }
 
 .login-btn:hover {
-  background: #ffd27f;
-  box-shadow: 0 0 12px rgba(255, 210, 127, 0.6);
+  background: #a9e1ff;
+  box-shadow: 0 0 12px rgba(169, 225, 255, 0.7);
 }
 
 /* Bottom text */
@@ -86,11 +91,11 @@ input:focus {
   text-align: center;
   margin-top: 15px;
   font-size: 14px;
-  color: #222; /* Dark bottom text */
+  color: #eaf6ff;
 }
 
 .bottom-text a {
-  color: #ff4081; /* Pink link */
+  color: #fff;
   font-weight: 600;
   text-decoration: underline;
 }
@@ -100,3 +105,4 @@ input:focus {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
 }
+
